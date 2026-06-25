@@ -1,9 +1,9 @@
-  pipeline {
+pipeline {
     agent {label 'dev1-danang'}
     stages {
         stage('Checkout SCM') {
             steps {
-                git branch: 'main', url: 'https://github.com/danangast/simple-apps.git'
+                git branch: 'main', url: 'https://github.com/danangast/simple-apps.git
             }
         }
         stage('Build') {
