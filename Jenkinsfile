@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                git branch: 'dev', url: 'https://github.com/danangast/simple-apps.git'
+                git branch: 'main', url: 'https://github.com/danangast/simple-apps.git'
             }
         }
         stage('Build') {
