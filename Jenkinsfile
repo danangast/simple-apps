@@ -1,8 +1,5 @@
 pipeline {
     agent {label 'dev1-danang'}
-    
-    tools {nodejs "nodejs 18.16.0"}
-
     stages {
         stage('Checkout SCM') {
             steps {
