@@ -24,10 +24,10 @@ pipeline {
                 sh '''
                 cd apps
             sonar-scanner \
-              -Dsonar.projectKey=simpel-apps \
-              -Dsonar.sources=. \
-              -Dsonar.host.url=http://172.23.4.116:9000 \
-              -Dsonar.token=sqb_4790533f462550039631a81a3fdbc08b53f94582
+            -Dsonar.projectKey=project2-simple-apps \
+            -Dsonar.sources=. \
+            -Dsonar.host.url=http://172.23.4.116:9000 \
+            -Dsonar.token=sqp_e3e8e5e591fdd8d0444c2f7189978198f5b830ad
             '''
             }
         }
